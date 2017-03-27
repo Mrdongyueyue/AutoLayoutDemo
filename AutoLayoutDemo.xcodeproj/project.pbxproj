@@ -14,6 +14,15 @@
 		3C7DB48A1E88F3B9001C5079 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7DB4881E88F3B9001C5079 /* LaunchScreen.storyboard */; };
 		3C7DB4951E88F3BA001C5079 /* AutoLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4941E88F3BA001C5079 /* AutoLayoutDemoTests.swift */; };
 		3C7DB4A01E88F3BA001C5079 /* AutoLayoutDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB49F1E88F3BA001C5079 /* AutoLayoutDemoUITests.swift */; };
+		3C7DB4AF1E88F62E001C5079 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7DB4AE1E88F62E001C5079 /* SnapKit.framework */; };
+		3C7DB4B01E88F62E001C5079 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7DB4AE1E88F62E001C5079 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C7DB4B81E88F744001C5079 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4B71E88F744001C5079 /* UIColorHex.swift */; };
+		3C7DB4BE1E88FFED001C5079 /* IBLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4BC1E88FFED001C5079 /* IBLayoutViewController.swift */; };
+		3C7DB4BF1E88FFED001C5079 /* IBLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C7DB4BD1E88FFED001C5079 /* IBLayoutViewController.xib */; };
+		3C7DB4C11E890028001C5079 /* CodeNativeLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4C01E890028001C5079 /* CodeNativeLayoutViewController.swift */; };
+		3C7DB4C31E890033001C5079 /* SnapKitLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4C21E890033001C5079 /* SnapKitLayoutViewController.swift */; };
+		3C7DB4C51E8908C0001C5079 /* SKGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7DB4C41E8908C0001C5079 /* SKGeneralViewController.swift */; };
+		3C7DB4C71E890A54001C5079 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C7DB4C61E890A54001C5079 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3C7DB4B11E88F62E001C5079 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C7DB4B01E88F62E001C5079 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3C7DB47C1E88F3B9001C5079 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7DB47F1E88F3B9001C5079 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +70,14 @@
 		3C7DB49B1E88F3BA001C5079 /* AutoLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7DB49F1E88F3BA001C5079 /* AutoLayoutDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutDemoUITests.swift; sourceTree = "<group>"; };
 		3C7DB4A11E88F3BA001C5079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7DB4AE1E88F62E001C5079 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		3C7DB4B71E88F744001C5079 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		3C7DB4BC1E88FFED001C5079 /* IBLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBLayoutViewController.swift; sourceTree = "<group>"; };
+		3C7DB4BD1E88FFED001C5079 /* IBLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IBLayoutViewController.xib; sourceTree = "<group>"; };
+		3C7DB4C01E890028001C5079 /* CodeNativeLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeNativeLayoutViewController.swift; sourceTree = "<group>"; };
+		3C7DB4C21E890033001C5079 /* SnapKitLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitLayoutViewController.swift; sourceTree = "<group>"; };
+		3C7DB4C41E8908C0001C5079 /* SKGeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKGeneralViewController.swift; sourceTree = "<group>"; };
+		3C7DB4C61E890A54001C5079 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7DB4AF1E88F62E001C5079 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,8 @@
 		3C7DB4731E88F3B9001C5079 = {
 			isa = PBXGroup;
 			children = (
+				3C7DB4C61E890A54001C5079 /* Cartfile */,
+				3C7DB4AE1E88F62E001C5079 /* SnapKit.framework */,
 				3C7DB47E1E88F3B9001C5079 /* AutoLayoutDemo */,
 				3C7DB4931E88F3BA001C5079 /* AutoLayoutDemoTests */,
 				3C7DB49E1E88F3BA001C5079 /* AutoLayoutDemoUITests */,
@@ -97,9 +131,13 @@
 		3C7DB47E1E88F3B9001C5079 /* AutoLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3C7DB4B41E88F694001C5079 /* Category */,
 				3C7DB47F1E88F3B9001C5079 /* AppDelegate.swift */,
 				3C7DB4811E88F3B9001C5079 /* ViewController.swift */,
 				3C7DB4831E88F3B9001C5079 /* Main.storyboard */,
+				3C7DB4B91E88F8DE001C5079 /* CodeNativeLayout */,
+				3C7DB4BA1E88F8DE001C5079 /* IBLayout */,
+				3C7DB4BB1E88F8DE001C5079 /* SnapKitLayout */,
 				3C7DB4861E88F3B9001C5079 /* Assets.xcassets */,
 				3C7DB4881E88F3B9001C5079 /* LaunchScreen.storyboard */,
 				3C7DB48B1E88F3B9001C5079 /* Info.plist */,
@@ -125,6 +163,40 @@
 			path = AutoLayoutDemoUITests;
 			sourceTree = "<group>";
 		};
+		3C7DB4B41E88F694001C5079 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DB4B71E88F744001C5079 /* UIColorHex.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3C7DB4B91E88F8DE001C5079 /* CodeNativeLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DB4C01E890028001C5079 /* CodeNativeLayoutViewController.swift */,
+			);
+			path = CodeNativeLayout;
+			sourceTree = "<group>";
+		};
+		3C7DB4BA1E88F8DE001C5079 /* IBLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DB4BC1E88FFED001C5079 /* IBLayoutViewController.swift */,
+				3C7DB4BD1E88FFED001C5079 /* IBLayoutViewController.xib */,
+			);
+			path = IBLayout;
+			sourceTree = "<group>";
+		};
+		3C7DB4BB1E88F8DE001C5079 /* SnapKitLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3C7DB4C21E890033001C5079 /* SnapKitLayoutViewController.swift */,
+				3C7DB4C41E8908C0001C5079 /* SKGeneralViewController.swift */,
+			);
+			path = SnapKitLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +207,7 @@
 				3C7DB4781E88F3B9001C5079 /* Sources */,
 				3C7DB4791E88F3B9001C5079 /* Frameworks */,
 				3C7DB47A1E88F3B9001C5079 /* Resources */,
+				3C7DB4B11E88F62E001C5079 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,9 +308,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7DB4C71E890A54001C5079 /* Cartfile in Resources */,
 				3C7DB48A1E88F3B9001C5079 /* LaunchScreen.storyboard in Resources */,
 				3C7DB4871E88F3B9001C5079 /* Assets.xcassets in Resources */,
 				3C7DB4851E88F3B9001C5079 /* Main.storyboard in Resources */,
+				3C7DB4BF1E88FFED001C5079 /* IBLayoutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C7DB4C11E890028001C5079 /* CodeNativeLayoutViewController.swift in Sources */,
+				3C7DB4B81E88F744001C5079 /* UIColorHex.swift in Sources */,
 				3C7DB4821E88F3B9001C5079 /* ViewController.swift in Sources */,
+				3C7DB4C31E890033001C5079 /* SnapKitLayoutViewController.swift in Sources */,
 				3C7DB4801E88F3B9001C5079 /* AppDelegate.swift in Sources */,
+				3C7DB4BE1E88FFED001C5079 /* IBLayoutViewController.swift in Sources */,
+				3C7DB4C51E8908C0001C5079 /* SKGeneralViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +496,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7WLC7DGYAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.AutoLayoutDemo;
@@ -429,6 +513,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7WLC7DGYAW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AutoLayoutDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.AutoLayoutDemo;
@@ -514,6 +602,7 @@
 				3C7DB4A61E88F3BA001C5079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7DB4A71E88F3BA001C5079 /* Build configuration list for PBXNativeTarget "AutoLayoutDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +611,7 @@
 				3C7DB4A91E88F3BA001C5079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7DB4AA1E88F3BA001C5079 /* Build configuration list for PBXNativeTarget "AutoLayoutDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +620,7 @@
 				3C7DB4AC1E88F3BA001C5079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
