@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         IBLayoutButton.setTitle("IB布局", for: .normal)
         IBLayoutButton.setTitleColor(UIColor.hexValue(0xf8f8f8), for: .normal)
         IBLayoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        IBLayoutButton.layer.cornerRadius = 6
+        IBLayoutButton.layer.masksToBounds = true
         view.addSubview(IBLayoutButton)
         IBLayoutButton.snp.makeConstraints { (make) in
             make.leading.equalTo(self.view.layoutMarginsGuide)
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
         codeNativeLayoutButton.setTitle("原生代码布局", for: .normal)
         codeNativeLayoutButton.setTitleColor(UIColor.hexValue(0xf8f8f8), for: .normal)
         codeNativeLayoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        codeNativeLayoutButton.layer.cornerRadius = 6
+        codeNativeLayoutButton.layer.masksToBounds = true
         view.addSubview(codeNativeLayoutButton)
         codeNativeLayoutButton.snp.makeConstraints { (make) in
             make.trailing.equalTo(self.view.layoutMarginsGuide)
@@ -49,6 +53,8 @@ class ViewController: UIViewController {
         snapKitLayoutButton.setTitle("SnapKit代码布局", for: .normal)
         snapKitLayoutButton.setTitleColor(UIColor.hexValue(0xf8f8f8), for: .normal)
         snapKitLayoutButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
+        snapKitLayoutButton.layer.cornerRadius = 6
+        snapKitLayoutButton.layer.masksToBounds = true
         view.addSubview(snapKitLayoutButton)
         snapKitLayoutButton.snp.makeConstraints { (make) in
             make.leading.trailing.equalTo(self.view.layoutMarginsGuide)

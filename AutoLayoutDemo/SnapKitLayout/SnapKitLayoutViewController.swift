@@ -23,10 +23,10 @@ class SnapKitLayoutViewController: UIViewController {
         
         layoutWays = [
             ["title":"常规布局","className":"SKGeneralViewController"],
-            ["title":"动画","className":""],
-            ["title":"UIScrollView","className":""],
-            ["title":"UITableView","className":""],
-            ["title":"UILayoutGuide","className":""]
+            ["title":"动画","className":"SKAnimationViewController"],
+            ["title":"UIScrollView","className":"SKScrollViewController"],
+            ["title":"UITableView","className":"SKTableViewController"],
+            ["title":"UILayoutGuide","className":"SKLayoutGuideViewController"]
             ]
         
         view.addSubview(tableView)
