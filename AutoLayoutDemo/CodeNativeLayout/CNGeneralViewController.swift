@@ -21,7 +21,7 @@ class CNGeneralViewController: UIViewController {
         view.addSubview(blueView)
         
         blueView.translatesAutoresizingMaskIntoConstraints = false
-        let blueTopConstraint = NSLayoutConstraint.init(item: blueView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 84)
+        let blueTopConstraint = NSLayoutConstraint.init(item: blueView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1, constant: 20)
         let blueBottomConstraint = NSLayoutConstraint.init(item: blueView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: -20)
         let blueLeadingConstraint = NSLayoutConstraint.init(item: blueView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 20)
         let blueTrailingConstraint = NSLayoutConstraint.init(item: blueView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: -20)

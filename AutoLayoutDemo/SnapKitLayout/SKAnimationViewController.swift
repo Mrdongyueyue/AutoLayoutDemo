@@ -36,7 +36,7 @@ class SKAnimationViewController: UIViewController {
         moveView.backgroundColor = UIColor.hexValue(0x40a0ff)
         view.addSubview(moveView)
         moveView.snp.makeConstraints { (make) in
-            make.top.equalTo(80).priority(.high)
+            make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(10).priority(.high)
             make.leading.equalTo(10)
             make.size.equalTo(CGSize(width: 90, height: 90))
             make.bottom.lessThanOrEqualTo(view.snp.bottom)
@@ -100,7 +100,7 @@ class SKAnimationViewController: UIViewController {
     
     override func updateViewConstraints() {
         moveView.snp.updateConstraints { (make) in
-            make.top.equalTo(80 + moveStep * 100).priority(.high)
+            make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(10 + moveStep * 100).priority(.high)
         }
         stretchView.snp.updateConstraints { (make) in
             make.size.equalTo(CGSize(width: 90 + 100 * stretchScale, height: 90 + 100 * stretchScale))

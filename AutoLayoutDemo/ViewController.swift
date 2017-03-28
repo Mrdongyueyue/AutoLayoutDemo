@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         view.addSubview(IBLayoutButton)
         IBLayoutButton.snp.makeConstraints { (make) in
             make.leading.equalTo(self.view.layoutMarginsGuide)
-            make.top.equalTo(74)
+            make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(10)
         }
         IBLayoutButton.addTarget(self, action: #selector(didClickIBLayoutButton(button:)), for: .touchUpInside)
         

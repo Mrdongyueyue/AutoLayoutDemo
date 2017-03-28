@@ -20,7 +20,9 @@ class SKGeneralViewController: UIViewController {
         blueView.backgroundColor = UIColor.hexValue(0x40a0ff)
         view.addSubview(blueView)
         blueView.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsets(top: 84, left: 20, bottom: 20, right: 20))
+            make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(20)
+            make.leading.equalTo(20)
+            make.trailing.bottom.equalTo(-20)
         }
         
         let redView = UIView()

@@ -48,7 +48,7 @@ class CNAnimationViewController: UIViewController {
         view.addSubview(moveView)
         
         moveView.translatesAutoresizingMaskIntoConstraints = false
-        moveViewTop = NSLayoutConstraint(item: moveView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 80)
+        moveViewTop = NSLayoutConstraint(item: moveView, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1, constant: 10)
         let moveViewLeading = NSLayoutConstraint(item: moveView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 10)
         let moveViewWidth = NSLayoutConstraint(item: moveView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 90)
         let moveViewHeight = NSLayoutConstraint(item: moveView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 90)
@@ -118,7 +118,7 @@ class CNAnimationViewController: UIViewController {
     
     override func updateViewConstraints() {
         
-        moveViewTop.constant = CGFloat(80 + moveStep * 100)
+        moveViewTop.constant = CGFloat(10 + moveStep * 100)
         
         stretchViewHeight.constant = CGFloat(90 + 100 * stretchScale)
         stretchViewWidth.constant = CGFloat(90 + 100 * stretchScale)
