@@ -35,6 +35,7 @@
 		3C856D381E8A32860075231B /* CNLayoutGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C856D371E8A32860075231B /* CNLayoutGuideViewController.swift */; };
 		3C8817961E8B461800DC6EC0 /* SKHugCompressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8817951E8B461800DC6EC0 /* SKHugCompressViewController.swift */; };
 		3C88179E1E8B65B800DC6EC0 /* SKIntrinsicSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88179D1E8B65B800DC6EC0 /* SKIntrinsicSizeViewController.swift */; };
+		3C8817A01E8B855000DC6EC0 /* SKIntrinsicContentSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C88179F1E8B855000DC6EC0 /* SKIntrinsicContentSizeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		3C856D371E8A32860075231B /* CNLayoutGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNLayoutGuideViewController.swift; sourceTree = "<group>"; };
 		3C8817951E8B461800DC6EC0 /* SKHugCompressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKHugCompressViewController.swift; sourceTree = "<group>"; };
 		3C88179D1E8B65B800DC6EC0 /* SKIntrinsicSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIntrinsicSizeViewController.swift; sourceTree = "<group>"; };
+		3C88179F1E8B855000DC6EC0 /* SKIntrinsicContentSizeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKIntrinsicContentSizeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 				3C856D2F1E8A16FE0075231B /* SKLayoutGuideViewController.swift */,
 				3C8817951E8B461800DC6EC0 /* SKHugCompressViewController.swift */,
 				3C88179D1E8B65B800DC6EC0 /* SKIntrinsicSizeViewController.swift */,
+				3C88179F1E8B855000DC6EC0 /* SKIntrinsicContentSizeView.swift */,
 			);
 			path = SnapKitLayout;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				3C856D281E89F9F60075231B /* SKScrollViewController.swift in Sources */,
 				3C7DB4BE1E88FFED001C5079 /* IBLayoutViewController.swift in Sources */,
 				3C88179E1E8B65B800DC6EC0 /* SKIntrinsicSizeViewController.swift in Sources */,
+				3C8817A01E8B855000DC6EC0 /* SKIntrinsicContentSizeView.swift in Sources */,
 				3C856D321E8A32370075231B /* CNGeneralViewController.swift in Sources */,
 				3C7DB4C51E8908C0001C5079 /* SKGeneralViewController.swift in Sources */,
 				3C856D301E8A16FE0075231B /* SKLayoutGuideViewController.swift in Sources */,
