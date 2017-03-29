@@ -5,7 +5,7 @@
 //  Created by 董知樾 on 2017/3/27.
 //  Copyright © 2017年 董知樾. All rights reserved.
 //
-//TODO:~~~ 抗压缩、拉伸和自有尺寸 ~~~
+//TODO:~~~ 自有尺寸 ~~~
 
 import UIKit
 import SnapKit
@@ -27,7 +27,9 @@ class SnapKitLayoutViewController: UIViewController {
             ["title":"动画","className":"SKAnimationViewController"],
             ["title":"UIScrollView","className":"SKScrollViewController"],
             ["title":"UITableView","className":"SKTableViewController"],
-            ["title":"UILayoutGuide","className":"SKLayoutGuideViewController"]
+            ["title":"UILayoutGuide","className":"SKLayoutGuideViewController"],
+            ["title":"抗压缩、拉伸","className":"SKHugCompressViewController"],
+            ["title":"自有尺寸-IntrinsicSzie","className":"SKIntrinsicSizeViewController"]
             ]
         
         view.addSubview(tableView)
