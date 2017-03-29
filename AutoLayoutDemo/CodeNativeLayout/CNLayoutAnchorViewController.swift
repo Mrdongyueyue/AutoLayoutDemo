@@ -64,6 +64,7 @@ class CNLayoutAnchorViewController: UIViewController {
             lastLabel = label
         }
         
+        ///NSLayoutAnchor是iOS9之后新增的约束方式，相较于NSLayoutConstraint来说，更能体现AutoLayout的相对性，且代码量减少了许多，看起来也更加清晰了
     }
     
     func arcText() -> String! {

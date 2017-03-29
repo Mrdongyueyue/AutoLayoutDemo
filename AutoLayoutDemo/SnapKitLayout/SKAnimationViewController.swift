@@ -83,7 +83,8 @@ class SKAnimationViewController: UIViewController {
         }) { (comp) in
             button.isEnabled = true
         }
-        
+        ///view.setNeedsUpdateConstraints() 告诉self.view约束需要更新
+        ///view.updateConstraintsIfNeeded() 调用此方法告诉self.view检测是否需要更新约束，若需要则更新，下面添加动画效果才起作用
     }
     
     func didClickStretchButton(button : UIButton) -> Void {
@@ -98,6 +99,7 @@ class SKAnimationViewController: UIViewController {
         }
     }
     
+    ///官方推荐在updateViewConstraints方法中更新或者添加约束
     override func updateViewConstraints() {
         moveView.snp.updateConstraints { (make) in
             make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(10 + moveStep * 100).priority(.high)

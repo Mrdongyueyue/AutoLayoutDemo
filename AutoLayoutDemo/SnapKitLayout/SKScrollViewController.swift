@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 class SKScrollViewController: UIViewController {
 
@@ -17,11 +18,12 @@ class SKScrollViewController: UIViewController {
         title = "SnapKit-UIScrollView"
         view.backgroundColor = .white
         
-        view.addSubview(scrollView)
-        scrollView.snp.makeConstraints { (make) in
+        let webView = WKWebView()
+        view.addSubview(webView)
+        webView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
-        
+        webView.load(URLRequest(url: URL(string: "http://www.jianshu.com/p/faeb86e1aa1a")!))
         
     }
 
