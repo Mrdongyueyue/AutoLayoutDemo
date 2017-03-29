@@ -28,7 +28,7 @@ class SKAnimationViewController: UIViewController {
         stretchView.backgroundColor = UIColor.hexValue(0xfd84ea)
         view.addSubview(stretchView)
         stretchView.snp.makeConstraints { (make) in
-            make.size.equalTo(CGSize(width: 90, height: 90))
+            make.size.equalTo(CGSize(width: 90, height: 90)).priority(.high)
             make.center.equalTo(view)
             make.size.lessThanOrEqualTo(view.layoutMarginsGuide)
         }
@@ -105,7 +105,7 @@ class SKAnimationViewController: UIViewController {
             make.top.equalTo(self.topLayoutGuide.snp.bottom).offset(10 + moveStep * 100).priority(.high)
         }
         stretchView.snp.updateConstraints { (make) in
-            make.size.equalTo(CGSize(width: 90 + 100 * stretchScale, height: 90 + 100 * stretchScale))
+            make.size.equalTo(CGSize(width: 90 + 100 * stretchScale, height: 90 + 100 * stretchScale)).priority(.high)
         }
         super.updateViewConstraints()
     }
