@@ -89,7 +89,7 @@ class CNAnimationViewController: UIViewController {
         let stretchButtonHeight = NSLayoutConstraint(item: stretchButton, attribute: .height, relatedBy: .equal, toItem: moveButton, attribute: .height, multiplier: 1, constant: 0)
         NSLayoutConstraint.activate([stretchButtonLeading,stretchButtonTrailing,stretchButtonBottom,stretchButtonWidth,stretchButtonHeight])
         
-        ///NSLayoutConstraint代码量巨大，看起来也不清晰，阅读难度带，维护成本高，缺点很明显，使用原生的NSLayoutConstraint来做布局的话，做一些封装才好
+        ///NSLayoutConstraint代码量巨大，看起来也不清晰，阅读难度大，维护成本高，缺点很明显，使用原生的NSLayoutConstraint来做布局的话，做一些封装才好
     }
     
     func didClickMoveButton(button : UIButton) -> Void {
