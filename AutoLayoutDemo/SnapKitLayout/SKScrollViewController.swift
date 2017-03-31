@@ -12,6 +12,8 @@ import WebKit
 class SKScrollViewController: UIViewController {
 
     let scrollView = UIScrollView()
+    var indicator : UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,9 +26,29 @@ class SKScrollViewController: UIViewController {
             make.edges.equalTo(view)
         }
         webView.load(URLRequest(url: URL(string: "http://www.jianshu.com/p/faeb86e1aa1a")!))
+        webView.navigationDelegate = self
+        
+        indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        view.addSubview(indicator)
+        indicator.snp.makeConstraints { (make) in
+            make.center.equalTo(view)
+        }
+        indicator.hidesWhenStopped = true
         
     }
 
-    
+}
 
+extension SKScrollViewController : WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        indicator.startAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        indicator.stopAnimating()
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        indicator.stopAnimating()
+    }
 }
