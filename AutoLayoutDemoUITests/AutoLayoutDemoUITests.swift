@@ -9,7 +9,9 @@
 import XCTest
 
 class AutoLayoutDemoUITests: XCTestCase {
-        
+    
+    let application = XCUIApplication()
+    
     override func setUp() {
         super.setUp()
         
@@ -31,6 +33,27 @@ class AutoLayoutDemoUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        snapKitLayout(index: 6)
     }
     
+    func snapKitLayout(index : Int) {
+        if index == 6 {
+            let buttonQuery = application.descendants(matching: .button)
+            let snapKitButton = buttonQuery.element(matching: .button, identifier: "snapKitLayoutButton")
+            snapKitButton.tap()
+        } else {
+            let backButton = application.navigationBars.buttons["Back"]
+            XCTAssertTrue(backButton.exists, "exists\(6-index)")
+            
+            backButton.tap()
+        }
+        
+        let tableView = application.tables
+        let cell = tableView.cells.element(boundBy: UInt(6 - index))
+        cell.tap()
+        
+        if index-1 < 0 {return}
+        snapKitLayout(index: index - 1)
+        
+    }
 }

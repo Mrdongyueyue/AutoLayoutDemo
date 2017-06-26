@@ -20,7 +20,7 @@ class SKHugCompressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Content Hugging/Compression"
+        title = UIDevice.current.orientation == .portrait ? "抗压缩、拉伸" : "Content Hugging/Compression"
         view.backgroundColor = .white
         
         hugLabel1.backgroundColor = UIColor.hexValue(0xf8f8f8)
@@ -83,6 +83,8 @@ class SKHugCompressViewController: UIViewController {
         compressResistanceLabel2.text = "我是要拉伸"
         
         ///setContentHuggingPriority(_ priority: UILayoutPriority, for axis: UILayoutConstraintAxis)同理
+        
+        
     }
     
 

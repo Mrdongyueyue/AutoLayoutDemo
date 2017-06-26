@@ -42,7 +42,7 @@ class SKLayoutGuideViewController: UIViewController {
             make.centerY.equalTo(leftLabel)
         }
         
-        leftLabel.text = "左左左左左左"
+        leftLabel.text = "左左左左左左左左左左左左"
         rightLabel.text = "右右右右"
         
         ///leftLabel + rightLabel 左右排列，文字内容和长度不确定的情况下整体居中

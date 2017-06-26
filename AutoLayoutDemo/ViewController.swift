@@ -64,6 +64,8 @@ class ViewController: UIViewController {
         }
         snapKitLayoutButton.addTarget(self, action: #selector(didSnapKitLayoutButton(button:)), for: .touchUpInside)
         
+        
+        snapKitLayoutButton.accessibilityIdentifier = "snapKitLayoutButton"
     }
 
     

@@ -19,19 +19,53 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IB的可阅读性不高，不想写了😢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtG-zp-27J">
-                    <rect key="frame" x="64.5" y="323" width="246" height="21"/>
-                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFe-1Q-o69">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbJ-rd-ff9" userLabel="contaier View">
+                            <rect key="frame" x="0.0" y="0.0" width="750" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tEe-Ga-A1p">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <color key="backgroundColor" red="0.45882353190000003" green="0.74901962280000001" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrf-3s-cpZ">
+                                    <rect key="frame" x="375" y="0.0" width="375" height="667"/>
+                                    <color key="backgroundColor" red="0.99215686270000003" green="0.51764705879999995" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93725490199999995" green="0.2901960784" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="tEe-Ga-A1p" secondAttribute="bottom" id="5qt-J4-j6K"/>
+                                <constraint firstItem="tEe-Ga-A1p" firstAttribute="leading" secondItem="NbJ-rd-ff9" secondAttribute="leading" id="C2t-7S-wr7"/>
+                                <constraint firstItem="tEe-Ga-A1p" firstAttribute="top" secondItem="NbJ-rd-ff9" secondAttribute="top" id="Dea-2x-Mfd"/>
+                                <constraint firstItem="zrf-3s-cpZ" firstAttribute="top" secondItem="NbJ-rd-ff9" secondAttribute="top" id="NzW-ve-hJd"/>
+                                <constraint firstAttribute="bottom" secondItem="zrf-3s-cpZ" secondAttribute="bottom" id="ZxQ-51-Pte"/>
+                                <constraint firstItem="zrf-3s-cpZ" firstAttribute="leading" secondItem="tEe-Ga-A1p" secondAttribute="trailing" id="dLN-ox-GXr"/>
+                                <constraint firstAttribute="trailing" secondItem="zrf-3s-cpZ" secondAttribute="trailing" id="wzE-zf-eMy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NbJ-rd-ff9" secondAttribute="trailing" id="2Gs-ud-VeN"/>
+                        <constraint firstItem="NbJ-rd-ff9" firstAttribute="top" secondItem="YFe-1Q-o69" secondAttribute="top" id="AUF-Ot-46f"/>
+                        <constraint firstItem="tEe-Ga-A1p" firstAttribute="width" secondItem="YFe-1Q-o69" secondAttribute="width" id="Bzm-p9-1nt"/>
+                        <constraint firstItem="zrf-3s-cpZ" firstAttribute="width" secondItem="YFe-1Q-o69" secondAttribute="width" id="Lah-la-LDE"/>
+                        <constraint firstItem="NbJ-rd-ff9" firstAttribute="height" secondItem="YFe-1Q-o69" secondAttribute="height" id="dCV-Kk-n0F"/>
+                        <constraint firstAttribute="bottom" secondItem="NbJ-rd-ff9" secondAttribute="bottom" id="mJZ-g0-7xO"/>
+                        <constraint firstItem="NbJ-rd-ff9" firstAttribute="leading" secondItem="YFe-1Q-o69" secondAttribute="leading" id="pvf-Bt-hDJ"/>
+                    </constraints>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="AtG-zp-27J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Q5g-Qq-9t7"/>
-                <constraint firstItem="AtG-zp-27J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sv8-Do-19Q"/>
+                <constraint firstItem="YFe-1Q-o69" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Sq-fG-80v"/>
+                <constraint firstAttribute="trailing" secondItem="YFe-1Q-o69" secondAttribute="trailing" id="QQK-Xo-IPa"/>
+                <constraint firstItem="YFe-1Q-o69" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ccX-5K-W6D"/>
+                <constraint firstAttribute="bottom" secondItem="YFe-1Q-o69" secondAttribute="bottom" id="w11-9j-VgI"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="239.5" y="54.5"/>
         </view>
     </objects>
 </document>
